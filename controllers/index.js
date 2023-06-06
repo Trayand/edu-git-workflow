@@ -8,6 +8,18 @@ class Controller {
 
         response.status(200).json({volume})
     }
+    
+    static async login(req, res, next) {
+        try {
+            console.log("apakah kalian turu ges?");
+            console.log("jawab di chat");
+            console.log("Ngitung kecepatan mangga jatuh");
+            res.status(200).json({message: "GAMAU"})
+        } catch (error) {
+            console.log(error);
+            res.status(200).json({message: "GAMAU"})
+        }
+    }
 }
 
 module.exports = Controller
