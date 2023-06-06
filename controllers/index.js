@@ -20,6 +20,15 @@ class Controller {
             res.status(200).json({message: "GAMAU"})
         }
     }
+    static coba(request, response, next) {
+        console.log("blabalbalaba'");
+        const lebar = 5
+        const tinggi = 10
+        const panjang = 3
+        const volume = lebar * panjang * tinggi
+
+        response.status(200).json({volume: volume})
+    }
 }
 
 module.exports = Controller

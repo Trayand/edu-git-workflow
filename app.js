@@ -10,6 +10,7 @@ app.use(express.urlencoded({extended: true}))
 app.get("/", (request, response, next) => {
     response.json({message: "Aman gan"})
 })
+app.get("/coba", Controller.coba)
 
 app.get("/register", Controller.register)
 app.post("/login", Controller.login)
