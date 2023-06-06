@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.urlencoded({extended: true}))
 
-app.get("/", (request, response) => {
+app.get("/", (request, response, next) => {
     response.json({message: "Aman gan"})
 })
 
